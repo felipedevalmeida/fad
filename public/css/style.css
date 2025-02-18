@@ -1,0 +1,81 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #cdcdcd;
+    color: #343434;
+  }
+  
+  /* Header */
+  header {
+    background-color: #343434;
+    padding: 15px 0;
+  }
+  header .logo {
+    max-width: 150px;
+  }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  header nav ul li {
+    margin: 0 10px;
+  }
+  header nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .social-icon img {
+    width: 24px;
+    margin-left: 10px;
+  }
+  
+  /* Slider */
+  #slider {
+    position: relative;
+  }
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
+  .slider-caption {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .slider-caption .btn {
+    margin: 5px;
+  }
+  
+  /* Cards */
+  .card {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Botão Primary */
+  .btn.btn-primary {
+    background-color: #343434;
+    border: 1px solid #474747;
+    color: #FFFFFF;
+  }
+  .btn.btn-primary:hover {
+    background-color: #474747;
+    border-color: #5a5a5a;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #343434;
+  }
+  

@@ -1,0 +1,21 @@
+# Impede listagem de diretórios
+Options -Indexes
+
+# Define o arquivo de índice
+DirectoryIndex index.php index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /fad/
+
+  # Se o arquivo ou diretório não existir, redireciona para a pasta public
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Cabeçalhos de segurança
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
