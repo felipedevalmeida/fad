@@ -1,64 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Página Inicial</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Slick Slider (caso opte por este plugin) -->
-  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <?php require_once('header.php'); ?>
 </head>
 <body id="top">
   <!-- Header -->
   <header class="container-fluid">
-    <div class="row align-items-center">
-      <div class="col-md-3">
-        <img src="images/logo.png" alt="Logo" class="logo">
-      </div>
-      <div class="col-md-6">
-        <nav>
-          <ul class="nav justify-content-center">
-            <li class="nav-item"><a class="nav-link" href="#inicio">Página Inicial</a></li>
-            <li class="nav-item"><a class="nav-link" href="portfolio.php">Portfólio</a></li>
-            <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="contato.php">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="col-md-3 text-right">
-        <a href="#" class="social-icon"><img src="images/facebook.png" alt="Facebook"></a>
-        <a href="#" class="social-icon"><img src="images/twitter.png" alt="Twitter"></a>
-        <a href="#" class="social-icon"><img src="images/linkedin.png" alt="LinkedIn"></a>
-        <a href="#" class="social-icon"><img src="images/youtube.png" alt="YouTube"></a>
-        <a href="#" class="social-icon"><img src="images/instagram.png" alt="Instagram"></a>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-3">
+          <img src="assets/images/demo/logo/red.png" alt="Logo" class="logo">
+        </div>
+        <div class="col-md-6 text-center">
+          <nav>
+            <ul class="nav justify-content-center">
+              <li class="nav-item"><a class="nav-link" href="#inicio">Página Inicial</a></li>
+              <li class="nav-item"><a class="nav-link" href="portfolio.php">Portfólio</a></li>
+              <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="contato.php">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-3">
+          <div class="d-flex justify-content-end">
+            <a href="https://www.facebook.com/realfeelipepessoal" class="social-icon" target="_blank"><img src="assets/images/email_template/social_icon2_default.png" alt="Facebook"></a>
+            <a href="https://x.com/realfeelipe" class="social-icon" target="_blank"><img src="assets/images/email_template/social_icon3_default.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/in/felipe-almeida-b55694187/" class="social-icon" target="_blank"><img src="assets/images/email_template/social_icon1_default.png" alt="LinkedIn"></a>
+            <a href="https://www.youtube.com/@nicefee" class="social-icon" target="_blank"><img src="assets/images/email_template/social_icon4_default.png" alt="YouTube"></a>
+            <a href="https://www.instagram.com/realfeelipe" class="social-icon" target="_blank"><img src="assets/images/email_template/social_icon4_default.png" alt="Instagram"></a>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 
+
+
   <!-- Banner Slider -->
-  <section id="slider" class="container">
+  <section id="slider" class="container-fluid nopadding nomargin">
     <div class="slider">
       <div>
-        <img src="images/slider1.jpg" alt="Slider 1" class="img-fluid">
+        <img src="assets/images/demo/layerslider/slide-b-bg.jpg" alt="Slider 1" class="img-fluid">
         <div class="slider-caption">
           <a href="portfolio.php" class="btn btn-primary">Ver Portfólio</a>
           <a href="blog.php" class="btn btn-primary">Ver Blog</a>
         </div>
       </div>
       <div>
-        <img src="images/slider2.jpg" alt="Slider 2" class="img-fluid">
+        <img src="assets/images/demo/layerslider/slide-b-bg-blue.jpg" alt="Slider 2" class="img-fluid">
         <div class="slider-caption">
           <a href="portfolio.php" class="btn btn-primary">Ver Portfólio</a>
           <a href="blog.php" class="btn btn-primary">Ver Blog</a>
         </div>
       </div>
       <div>
-        <img src="images/slider3.jpg" alt="Slider 3" class="img-fluid">
+        <img src="assets/images/demo/layerslider/slide-b-bg-red.jpg" alt="Slider 3" class="img-fluid">
         <div class="slider-caption">
           <a href="portfolio.php" class="btn btn-primary">Ver Portfólio</a>
           <a href="blog.php" class="btn btn-primary">Ver Blog</a>
@@ -67,6 +63,7 @@
     </div>
   </section>
 
+
   <!-- Últimos Projetos -->
   <section id="ultimos-projetos" class="container mt-5">
     <h2>Últimos Projetos</h2>
@@ -74,7 +71,7 @@
       <!-- Card 1 -->
       <div class="col-md-4">
         <div class="card">
-          <img src="images/projeto1.jpg" class="card-img-top" alt="Projeto 1">
+          <img src="assets/images/demo/portfolio/a1.jpg" class="card-img-top" alt="Projeto 1">
           <div class="card-body">
             <p class="card-text">Descrição breve do projeto 1.</p>
             <a href="#" class="btn btn-primary">Saiba Mais</a>
@@ -84,7 +81,7 @@
       <!-- Card 2 -->
       <div class="col-md-4">
         <div class="card">
-          <img src="images/projeto2.jpg" class="card-img-top" alt="Projeto 2">
+          <img src="assets/images/demo/portfolio/a2.jpg" class="card-img-top" alt="Projeto 2">
           <div class="card-body">
             <p class="card-text">Descrição breve do projeto 2.</p>
             <a href="#" class="btn btn-primary">Saiba Mais</a>
@@ -94,7 +91,7 @@
       <!-- Card 3 -->
       <div class="col-md-4">
         <div class="card">
-          <img src="images/projeto3.jpg" class="card-img-top" alt="Projeto 3">
+          <img src="assets/images/demo/portfolio/a3.jpg" class="card-img-top" alt="Projeto 3">
           <div class="card-body">
             <p class="card-text">Descrição breve do projeto 3.</p>
             <a href="#" class="btn btn-primary">Saiba Mais</a>
@@ -146,7 +143,7 @@
       <!-- Card 1 -->
       <div class="col-md-4">
         <div class="card">
-          <img src="images/publicacao1.jpg" class="card-img-top" alt="Publicação 1">
+          <img src="assets/images/demo/portfolio/a7.jpg" class="card-img-top" alt="Publicação 1">
           <div class="card-body">
             <p class="card-text">Descrição breve da publicação 1.</p>
             <a href="blog.php" class="btn btn-primary" target="_blank">Saiba Mais</a>
@@ -156,7 +153,7 @@
       <!-- Card 2 -->
       <div class="col-md-4">
         <div class="card">
-          <img src="images/publicacao2.jpg" class="card-img-top" alt="Publicação 2">
+          <img src="assets/images/demo/portfolio/a4.jpg" class="card-img-top" alt="Publicação 2">
           <div class="card-body">
             <p class="card-text">Descrição breve da publicação 2.</p>
             <a href="blog.php" class="btn btn-primary" target="_blank">Saiba Mais</a>
@@ -166,7 +163,7 @@
       <!-- Card 3 -->
       <div class="col-md-4">
         <div class="card">
-          <img src="images/publicacao3.jpg" class="card-img-top" alt="Publicação 3">
+          <img src="assets/images/demo/portfolio/a5.jpg" class="card-img-top" alt="Publicação 3">
           <div class="card-body">
             <p class="card-text">Descrição breve da publicação 3.</p>
             <a href="blog.php" class="btn btn-primary" target="_blank">Saiba Mais</a>
@@ -179,10 +176,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="container-fluid bg-dark text-white mt-5 p-3 text-center">
-    <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
-    <a href="#top" class="btn btn-primary">UP</a>
-  </footer>
+  <?php require_once('footer.php'); ?>
 </body>
 </html>

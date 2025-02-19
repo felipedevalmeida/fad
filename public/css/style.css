@@ -11,11 +11,19 @@
     background-color: #cdcdcd;
     color: #343434;
   }
+  .btn-primary{
+    background-color: #474747 !important;
+    color: #FFFFFF !important;
+  }
   
   /* Header */
   header {
     background-color: #343434;
     padding: 15px 0;
+  }
+  .flex{
+    display: flex !important;
+    justify-content: space-around !important;
   }
   header .logo {
     max-width: 150px;
@@ -29,10 +37,15 @@
     margin: 0 10px;
   }
   header nav ul li a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: bold;
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
   }
+  .social-icon {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
   .social-icon img {
     width: 24px;
     margin-left: 10px;
@@ -44,7 +57,7 @@
   }
   .slider img {
     width: 100%;
-    height: auto;
+    max-height: 500px !important;
   }
   .slider-caption {
     position: absolute;
